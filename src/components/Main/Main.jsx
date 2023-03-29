@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleMovie from '../SingleMovie/SingleMovie';
 
-const Main = () => {
+const Main = ({handleWatchTime}) => {
 
     const [movies, setMovies] = useState([])
 
@@ -14,7 +14,7 @@ const Main = () => {
     return (
         <div>
             {
-                movies.map( (movie) => <SingleMovie movie={movie}></SingleMovie> )
+                movies.map( (movie) => <SingleMovie handleWatchTime={handleWatchTime} movie={movie} key={movie.id}></SingleMovie> )
             }
         </div>
     );

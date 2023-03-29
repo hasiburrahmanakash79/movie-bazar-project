@@ -1,13 +1,13 @@
 import React from 'react';
 
-const SingleMovie = ({movie}) => {
+const SingleMovie = ({movie, handleWatchTime}) => {
 
     return (
         <div>
             <div className="movie-container card mb-3">
                 <div className="movie-cart">
                     <div className="poster">
-                        <img className='w-25' src={movie.poster} alt="" />
+                        <img className='w-25 mb-4' src={movie.poster} alt="" />
                     </div>
                     <h4>Name: {movie.movieName}</h4>
                     <p>Description: {movie.description}</p>
@@ -15,7 +15,7 @@ const SingleMovie = ({movie}) => {
                         <p>Watch Time: {movie.watchTime}</p>
                         <p>Rating: {movie.imdbRating}</p>
                     </div>
-                    <button className='btn btn-success w-50'>Book Now</button>
+                    <button onClick={() => handleWatchTime(movie.watchTime)} className='btn btn-success w-50'>Book Now</button>
                 </div>
             </div>
         </div>

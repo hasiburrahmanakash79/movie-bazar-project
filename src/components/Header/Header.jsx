@@ -4,8 +4,8 @@ const Header = () => {
   return (
     <nav className="">
       <div className="navbar navbar-light bg-light justify-content-between">
-        <a className="navbar-brand ps-4">Movie_Bazar</a>
-        <form className="form-inline d-flex gap-3 pe-4">
+        <a className="navbar-brand fw-semibold ps-4">Movie-Bazar</a>
+        <form className="form-inline d-flex gap-3 px-4">
           <input
             className="form-control mr-sm-2"
             type="search"
