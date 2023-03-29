@@ -3,7 +3,7 @@ import React from 'react';
 const SingleMovie = ({movie, handleWatchTime}) => {
 
     return (
-        <div>
+        <div className=''>
             <div className="movie-container card mb-3">
                 <div className="movie-cart">
                     <div className="poster">
